@@ -61,7 +61,15 @@ export default function Contact() {
         <Textarea name="message" placeholder="Message" rows={6} required minLength={10} />
 
         <div className="flex items-center gap-3">
-          <Button type="submit" disabled={status === "loading"} className="w-fit">
+          <Button
+            type="submit"
+            disabled={status === "loading"}
+            className="w-fit px-6 py-2 rounded-lg font-medium border border-black
+                      bg-white text-black shadow-inner
+                      transition-all duration-500 ease-in-out
+                      hover:bg-black hover:text-white hover:shadow-lg
+                      hover:tracking-wide
+                      focus:outline-none focus:ring-2 focus:ring-black">
             {status === "loading" ? "Sending…" : "Send"}
           </Button>
 
