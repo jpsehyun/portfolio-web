@@ -15,33 +15,7 @@ const sectionReveal: Variants = {
 export default function Page() {
   return (
     <section className="relative">
-      {/* Animated gradient blobs background */}
-      <motion.div
-        aria-hidden
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
-        className="pointer-events-none absolute inset-0 -z-10"
-      >
-        <motion.div
-          initial={{ x: -120, y: -60, scale: 0.9 }}
-          animate={{ x: 0, y: 0, scale: 1 }}
-          transition={{ duration: 10, repeat: Infinity, repeatType: "reverse", ease: "linear" }}
-          className="absolute left-[-10%] top-[-10%] h-64 w-64 rounded-full bg-fuchsia-600/30 blur-3xl"
-        />
-        <motion.div
-          initial={{ x: 100, y: 40, scale: 1 }}
-          animate={{ x: 40, y: -20, scale: 1.05 }}
-          transition={{ duration: 12, repeat: Infinity, repeatType: "reverse", ease: "linear" }}
-          className="absolute right-[-8%] top-[5%] h-72 w-72 rounded-full bg-cyan-500/25 blur-3xl"
-        />
-        <motion.div
-          initial={{ x: -40, y: 120, scale: 1 }}
-          animate={{ x: 60, y: 80, scale: 1.05 }}
-          transition={{ duration: 14, repeat: Infinity, repeatType: "reverse", ease: "linear" }}
-          className="absolute left-[20%] bottom-[-6%] h-80 w-80 rounded-full bg-emerald-500/20 blur-3xl"
-        />
-      </motion.div>
+      
 
       {/* HERO */}
       <div className="relative mb-10 w-full overflow-hidden rounded-2xl border border-white/10 
