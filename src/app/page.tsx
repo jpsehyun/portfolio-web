@@ -44,7 +44,8 @@ export default function Page() {
       </motion.div>
 
       {/* HERO */}
-      <div className="relative mb-10 w-full overflow-hidden rounded-2xl border border-white/10 bg-[url('https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center">
+      <div className="relative mb-10 w-full overflow-hidden rounded-2xl border border-white/10 
+             bg-[url('/banner.jpg')] bg-cover bg-center">
         <div className="bg-gradient-to-t from-black/70 to-black/20">
           <div className="px-4 py-16 md:p-16">
             <motion.h1
