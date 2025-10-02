@@ -13,7 +13,7 @@ const projects = [
     title: "Trivia Game Show",
     desc: "Allows the users to play a trivia game. Powered by Open Trivia DB API.",
     tags: ["React", "TypeScript", "Tailwind"],
-    link: "trivia-gameshow.vercel.app",
+    link: "https://trivia-gameshow.vercel.app",
     img: "/images/trivia-thumb.png",
   },
   {
