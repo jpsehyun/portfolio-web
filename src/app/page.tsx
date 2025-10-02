@@ -21,7 +21,7 @@ export default function Page() {
              bg-[url('/banner.jpg')] bg-cover bg-center"
       >
         <div className="bg-gradient-to-t from-black/70 to-black/20">
-          <div className="px-4 py-16 md:p-16">
+          <div className="px-4 py-10 md:px-10 md:py-10">
             <motion.h1
               variants={heroItem}
               initial="hidden"
@@ -79,12 +79,14 @@ export default function Page() {
           <p className="mt-3 leading-relaxed text-neutral-200">
             BS Computer Science (Software Technology), De La Salle University.
             Dean’s Lister with strong coding and leadership experience through
-            Microsoft Student Community and COMET Lab. Skilled in C, Java,
-            JavaScript, and focused on frontend using React, Next.js, and
-            Tailwind. Experienced in agile teamwork as Developer and QA.
-            Completed South Korean military service in 2023, enhancing
-            adaptability and leadership. Fluent in English, proven by a perfect
-            TOEIC score of 990.
+            Microsoft Student Community and COMET Lab.
+            <br></br>
+            <br></br>Skilled in C, Python, JavaScript, and focused on frontend
+            using React, Next.js, and Tailwind. Experienced in agile teamwork as
+            Developer and QA. Completed South Korean military service in 2023,
+            enhancing adaptability and leadership.
+            <br></br>
+            <br></br>Fluent in English, proven by a perfect TOEIC score of 990.
           </p>
         </div>
 
