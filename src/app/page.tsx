@@ -82,9 +82,9 @@ export default function Page() {
             Microsoft Student Community and COMET Lab.
             <br></br>
             <br></br>Skilled in C, Python, JavaScript, and focused on frontend
-            using React, Next.js, and Tailwind. Experienced in agile teamwork as
-            Developer and QA. Completed South Korean military service in 2023,
-            enhancing adaptability and leadership.
+            using React, Next.js, and Tailwind. Experienced in agile framework
+            with Scrum and passionate in UI/UX. Completed South Korean military
+            service in 2023, enhancing adaptability and leadership.
             <br></br>
             <br></br>Fluent in English, proven by a perfect TOEIC score of 990.
           </p>
