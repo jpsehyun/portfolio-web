@@ -1,20 +1,22 @@
 import { Card } from "@/components/ui/card";
+import Link from "next/link";
 
 const projects = [
   {
-    title: "AR Tour",
-    desc: "Station-based AR tour with video, subtitles, and branching.",
-    tags: ["Unity", "AR Foundation"],
+    title: "Lottery 6/45 Generator",
+    desc: "Allows the users to play unofficial South Korean 6/45 lottery mock-up game.",
+    tags: ["React", "JavaScript", "Tailwind"],
+    link: "https://lotto-picker-seven.vercel.app/lotto",
   },
   {
-    title: "Security Lab",
-    desc: "Practice environment for XSS and SQL injection on demo targets.",
-    tags: ["Burp", "ZAP"],
+    title: "Trivia Game Show",
+    desc: "Allows the users to play a trivia game. Powered by Open Trivia DB API.",
+    tags: ["React", "TypeScript", "Tailwind"],
   },
   {
-    title: "React Dashboard",
-    desc: "Fast dashboard with charts and a clean layout.",
-    tags: ["React", "Tailwind"],
+    title: "Halls of De La Salle",
+    desc: "Undergraduate Thesis, A recreation of the hollowing events which happened in 1945 at De La Salle University. Evokes empathy and rational compassion through AR experience.",
+    tags: ["Unity", "OpenCV", "AR Foundation"],
   },
 ];
 

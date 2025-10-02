@@ -4,29 +4,29 @@ import { motion, type Variants } from "framer-motion";
 
 const heroItem: Variants = {
   hidden: { opacity: 0, y: 20 },
-  show:   { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
 const sectionReveal: Variants = {
   hidden: { opacity: 0, y: 24 },
-  show:   { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
 export default function Page() {
   return (
     <section className="relative">
-      
-
       {/* HERO */}
-      <div className="relative mb-10 w-full overflow-hidden rounded-2xl border border-white/10 
-             bg-[url('/banner.jpg')] bg-cover bg-center">
+      <div
+        className="relative mb-10 w-full overflow-hidden rounded-2xl border border-white/10 
+             bg-[url('/banner.jpg')] bg-cover bg-center"
+      >
         <div className="bg-gradient-to-t from-black/70 to-black/20">
           <div className="px-4 py-16 md:p-16">
             <motion.h1
               variants={heroItem}
               initial="hidden"
               animate="show"
-              transition={{ delay: 0.00 }}
+              transition={{ delay: 0.0 }}
               className="text-4xl font-bold md:text-6xl"
             >
               Portfolio
@@ -39,14 +39,14 @@ export default function Page() {
               transition={{ delay: 0.15 }}
               className="mt-3 max-w-xl text-sm text-neutral-200 md:text-base"
             >
-              Developer • Security • AR/Unity
+              Frontend • JavaScript • React
             </motion.p>
 
             <motion.div
               variants={heroItem}
               initial="hidden"
               animate="show"
-              transition={{ delay: 0.30 }}
+              transition={{ delay: 0.3 }}
               className="mt-6 flex flex-wrap gap-3"
             >
               <a
@@ -77,14 +77,15 @@ export default function Page() {
         <div className="md:col-span-2">
           <h2 className="text-xl font-semibold">About</h2>
           <p className="mt-3 leading-relaxed text-neutral-200">
-            I build web apps, AR experiences in Unity, and I do application security testing.
-            I like clean UI, fast loads, and simple flows.
+            BS Computer Science (Software Technology), De La Salle University.
+            Dean’s Lister with strong coding and leadership experience through
+            Microsoft Student Community and COMET Lab. Skilled in C, Java,
+            JavaScript, and focused on frontend using React, Next.js, and
+            Tailwind. Experienced in agile teamwork as Developer and QA.
+            Completed South Korean military service in 2023, enhancing
+            adaptability and leadership. Fluent in English, proven by a perfect
+            TOEIC score of 990.
           </p>
-          <ul className="mt-4 list-disc space-y-1 pl-6 text-sm text-neutral-300">
-            <li>Web: Next.js, React, Tailwind</li>
-            <li>Security: Burp Suite, ZAP, test targets</li>
-            <li>AR/Unity: AR Foundation, OpenCV, video scenes</li>
-          </ul>
         </div>
 
         <motion.div
@@ -96,10 +97,10 @@ export default function Page() {
         >
           <h3 className="text-sm font-medium text-neutral-300">Quick info</h3>
           <ul className="mt-2 space-y-2 text-sm text-neutral-300">
-            <li>Location: Seoul</li>
-            <li>Email: you@example.com</li>
-            <li>GitHub: github.com/yourname</li>
-            <li>LinkedIn: linkedin.com/in/yourname</li>
+            <li>Location: Changwon, South Korea</li>
+            <li>Email: jpsehyun@gmail.com</li>
+            <li>GitHub: github.com/jpsehyun</li>
+            <li>LinkedIn: https://www.linkedin.com/in/park-se-hyun</li>
           </ul>
         </motion.div>
       </motion.div>
