@@ -8,7 +8,9 @@ import { Button } from "@/components/ui/button";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mvgqywye";
 export default function Contact() {
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
   const [message, setMessage] = useState<string>("");
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -20,7 +22,8 @@ export default function Contact() {
     const data = {
       name: (form.elements.namedItem("name") as HTMLInputElement).value,
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
-      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement)
+        .value,
       // optional metadata
       _subject: "Portfolio Contact",
       _page: typeof window !== "undefined" ? window.location.href : "",
@@ -29,7 +32,10 @@ export default function Contact() {
     try {
       const res = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
-        headers: { "Accept": "application/json", "Content-Type": "application/json" },
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(data),
       });
 
@@ -40,7 +46,9 @@ export default function Contact() {
       } else {
         const j = await res.json().catch(() => ({}));
         setStatus("error");
-        setMessage(j?.errors?.[0]?.message ?? "Something went wrong. Please try again.");
+        setMessage(
+          j?.errors?.[0]?.message ?? "Something went wrong. Please try again."
+        );
       }
     } catch {
       setStatus("error");
@@ -54,11 +62,23 @@ export default function Contact() {
 
       <form onSubmit={onSubmit} className="mt-6 grid gap-4 md:max-w-xl">
         {/* Honeypot to reduce spam (bots fill hidden fields) */}
-        <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
+        <input
+          type="text"
+          name="_gotcha"
+          className="hidden"
+          tabIndex={-1}
+          autoComplete="off"
+        />
 
         <Input name="name" placeholder="Your name" required />
         <Input name="email" type="email" placeholder="Email" required />
-        <Textarea name="message" placeholder="Message" rows={6} required minLength={10} />
+        <Textarea
+          name="message"
+          placeholder="Message"
+          rows={6}
+          required
+          minLength={10}
+        />
 
         <div className="flex items-center gap-3">
           <Button
@@ -69,7 +89,8 @@ export default function Contact() {
                       transition-all duration-500 ease-in-out
                       hover:bg-black hover:text-white hover:shadow-lg
                       hover:tracking-wide
-                      focus:outline-none focus:ring-2 focus:ring-black">
+                      focus:outline-none focus:ring-2 focus:ring-black"
+          >
             {status === "loading" ? "Sending…" : "Send"}
           </Button>
 
