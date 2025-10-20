@@ -39,7 +39,7 @@ export default function Page() {
               transition={{ delay: 0.15 }}
               className="mt-3 max-w-xl text-sm text-neutral-200 md:text-base"
             >
-              Frontend • JavaScript • React
+              Data Transcription • Annotation • JavaScript • React
             </motion.p>
 
             <motion.div
@@ -82,11 +82,11 @@ export default function Page() {
             Microsoft Student Community and COMET Lab.
             <br></br>
             <br></br>Skilled in C, Python, JavaScript, and focused on frontend
-            using React, Next.js, and Tailwind. Experienced in agile framework
-            with Scrum and passionate in UI/UX. Completed South Korean military
-            service in 2023, enhancing adaptability and leadership.
+            using React, Next.js, and Tailwind. Experienced in data QA and labeling
+            with keen attention to detail and the ability to follow client instructions.
+            <br></br>Completed South Korean military service in 2023, enhancing adaptability and leadership.
             <br></br>
-            <br></br>Fluent in English, proven by a perfect TOEIC score of 990.
+            <br></br>Fluent in English and Korean, proven by a perfect TOEIC score of 990.
           </p>
         </div>
 
