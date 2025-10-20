@@ -14,7 +14,7 @@ const experiences = [
   },
   {
     role: "Data Annotator (Korean Language)",
-    company: "OneForma",
+    company: "Centific",
     period: "Remote",
     location: "",
     details: [
